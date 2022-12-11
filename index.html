@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022-MOOD_CALENDAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="main-container container">
+            <h1>2022 Mood Calendar</h1>
+            <p>~ color each day depending on what your mood was / is ~</p>
+            <div class="select-mood">
+                <p>Select mood:</p>
+                <div class="icon">
+
+
+                    <button class="mood angry  ">
+                        <i class="fa-regular icons  fa-face-angry"></i>
+
+                    </button>
+
+                    <button class="mood smile">
+                        <i class="fa-regular icons  fa-face-smile"></i>
+
+                    </button>
+
+                    <button class="mood tired">
+
+                        <i class="fa-regular icons  fa-face-tired"></i>
+
+                    </button>
+
+                    <button class="mood tear">
+
+                        <i class="fa-regular icons  fa-face-sad-tear"></i>
+
+                    </button>
+
+                    <button class="mood laugh ">
+
+                        <i class="fa-regular icons  fa-face-laugh-squint"></i>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+            <div class="calendar" id="calendar">
+
+                <!-- <div class="months">
+                    <p class="months-name">January</p>
+
+                    <div class="weeks-name">
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                    </div>
+
+                    <div class="date">
+                        <button class="dates">1</button>
+                        <button class="dates">2</button>
+                        <button class="dates">3</button>
+                        <button class="dates">4</button>
+                        <button class="dates">5</button>
+                        <button class="dates">6</button>
+                        <button class="dates">7</button>
+                        <button class="dates">8</button>
+                        <button class="dates">9</button>
+                        <button class="dates">10</button>
+                        <button class="dates">11</button>
+                        <button class="dates">12</button>
+                        <button class="dates">13</button>
+                        <button class="dates">14</button>
+                        <button class="dates">15</button>
+                        <button class="dates">16</button>
+                        <button class="dates">17</button>
+                        <button class="dates">18</button>
+                        <button class="dates">19</button>
+                        <button class="dates">20</button>
+                        <button class="dates">21</button>
+                        <button class="dates">22</button>
+                        <button class="dates">23</button>
+                        <button class="dates">24</button>
+                        <button class="dates">25</button>
+                        <button class="dates">26</button>
+                        <button class="dates">27</button>
+                        <button class="dates">28</button>
+                        <button class="dates">29</button>
+                        <button class="dates">30</button>
+                        <button class="dates last-dates">31</button>
+                    </div>
+
+
+
+                </div> -->
+
+                <!-- <div class="months">
+                    <p class="months-name">January</p>
+
+                    <div class="weeks-name">
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                    </div>
+
+                    <div class="date">
+                        <button class="dates">1</button>
+                        <button class="dates">2</button>
+                        <button class="dates">3</button>
+                        <button class="dates">4</button>
+                        <button class="dates">5</button>
+                        <button class="dates">6</button>
+                        <button class="dates">7</button>
+                        <button class="dates">8</button>
+                        <button class="dates">9</button>
+                        <button class="dates">10</button>
+                        <button class="dates">11</button>
+                        <button class="dates">12</button>
+                        <button class="dates">13</button>
+                        <button class="dates">14</button>
+                        <button class="dates">15</button>
+                        <button class="dates">16</button>
+                        <button class="dates">17</button>
+                        <button class="dates">18</button>
+                        <button class="dates">19</button>
+                        <button class="dates">20</button>
+                        <button class="dates">21</button>
+                        <button class="dates">22</button>
+                        <button class="dates">23</button>
+                        <button class="dates">24</button>
+                        <button class="dates">25</button>
+                        <button class="dates">26</button>
+                        <button class="dates">27</button>
+                        <button class="dates">28</button>
+                        <button class="dates">29</button>
+                        <button class="dates">30</button>
+                        <button class="dates last-dates">31</button>
+                    </div>
+
+
+
+                </div>
+                <div class="months">
+                    <p class="months-name">January</p>
+
+                    <div class="weeks-name">
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                    </div>
+
+                    <div class="date">
+                        <button class="dates">1</button>
+                        <button class="dates">2</button>
+                        <button class="dates">3</button>
+                        <button class="dates">4</button>
+                        <button class="dates">5</button>
+                        <button class="dates">6</button>
+                        <button class="dates">7</button>
+                        <button class="dates">8</button>
+                        <button class="dates">9</button>
+                        <button class="dates">10</button>
+                        <button class="dates">11</button>
+                        <button class="dates">12</button>
+                        <button class="dates">13</button>
+                        <button class="dates">14</button>
+                        <button class="dates">15</button>
+                        <button class="dates">16</button>
+                        <button class="dates">17</button>
+                        <button class="dates">18</button>
+                        <button class="dates">19</button>
+                        <button class="dates">20</button>
+                        <button class="dates">21</button>
+                        <button class="dates">22</button>
+                        <button class="dates">23</button>
+                        <button class="dates">24</button>
+                        <button class="dates">25</button>
+                        <button class="dates">26</button>
+                        <button class="dates">27</button>
+                        <button class="dates">28</button>
+                        <button class="dates">29</button>
+                        <button class="dates">30</button>
+                        <button class="dates last-dates">31</button>
+                    </div>
+
+
+
+                </div>
+
+                <div class="months">
+                    <p class="months-name">January</p>
+
+                    <div class="weeks-name">
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                        <p class="week-name">Sun</p>
+                    </div>
+
+                    <div class="date">
+                        <button class="dates">1</button>
+                        <button class="dates">2</button>
+                        <button class="dates">3</button>
+                        <button class="dates">4</button>
+                        <button class="dates">5</button>
+                        <button class="dates">6</button>
+                        <button class="dates">7</button>
+                        <button class="dates">8</button>
+                        <button class="dates">9</button>
+                        <button class="dates">10</button>
+                        <button class="dates">11</button>
+                        <button class="dates">12</button>
+                        <button class="dates">13</button>
+                        <button class="dates">14</button>
+                        <button class="dates">15</button>
+                        <button class="dates">16</button>
+                        <button class="dates">17</button>
+                        <button class="dates">18</button>
+                        <button class="dates">19</button>
+                        <button class="dates">20</button>
+                        <button class="dates">21</button>
+                        <button class="dates">22</button>
+                        <button class="dates">23</button>
+                        <button class="dates">24</button>
+                        <button class="dates">25</button>
+                        <button class="dates">26</button>
+                        <button class="dates">27</button>
+                        <button class="dates">28</button>
+                        <button class="dates">29</button>
+                        <button class="dates">30</button>
+                        <button class="dates last-dates">31</button>
+                    </div>
+
+
+
+                </div> -->
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="side-bar">
+            <i class="side-icons side1 fa-solid fa-shuffle"></i>
+            <i class="side-icons side2 fa-solid fa-broom"></i>
+        </div>
+        <div class="bottom-part">
+            PART OF #100Days-100PROJECTS
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/cdad866371.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+
+.container {
+    /* max-width: 1400px; */
+    margin-inline: auto;
+    padding: 5px;
+}
+
+::root {
+
+    --happy-color: green;
+    --angry-color: red;
+    --sad-color: rgb(233, 64, 64);
+    --good-color: yellow;
+    --little-good-color: rgba(255, 255, 0, 0.726);
+
+}
+
+
+body {
+    background: #fbdca5;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 100%;
+}
+
+.months {
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+
+.weeks-name {
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+
+}
+
+.week-name {
+    /* font-size: .9rem; */
+    text-align: center;
+}
+
+.date {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+
+}
+
+.dates {
+    background: gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    color: wheat;
+}
+
+
+.dates:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+.select-mood {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background: #fbdca5;
+
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    gap: 25px;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: fixed;
+    right: 0;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.side-icons:active {
+
+    transform: scale(0.9);
+}
+
+.angry {
+    color: #ff0000;
+}
+
+.smile {
+    color: #9e9e06;
+
+}
+
+.tired {
+    color: #f3711a;
+}
+
+.tear {
+    color: #360202;
+}
+
+.laugh {
+    color: #03c6f7;
+}
+
+.side-icons {
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    background: green;
+    color: white;
+    cursor: pointer;
+
+}
+
+.side-icons:hover {
+    background: rgb(33, 138, 33);
+    transition: .2s;
+}
+
+
+.bottom-part {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: darkblue;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    color: wheat;
+}
+
+.side1 {
+    background: green;
+}
+
+.side2 {
+    background: red;
+}
+
+.icons {
+    font-size: 2rem;
+
+
+}
+
+button {
+    border: 0;
+    background: 0;
+    cursor: pointer;
+
+}
+
+.mood {
+    height: 50px;
+    width: 50px;
+}
+
+.selected {
+    background: currentColor;
+    cursor: pointer;
+
+    border-radius: 80%;
+
+}
+
+.mood :active {
+
+    transform: scale(0.9);
+}
+
+.mood :focus {
+    outline: 0;
+}
+
+.selected i {
+    color: #fff;
+}
+
+.bottom-part {
+    display: none;
+
+}
+
+.last-dates {}
+
+@media screen and (min-width:850px) {
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        margin-top: 75px;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        margin-top: 75px;
+    }
+}
